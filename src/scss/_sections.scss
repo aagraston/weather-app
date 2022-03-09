@@ -9,10 +9,17 @@
   top: 40%;
   transform: translateY(-75%) translateX(-50%);
 
+  //coloring & border
+  background-color: rgba($color-black, $alpha-75);
+  padding: $spc-100;
+  border-radius: 12px 12px 12px 12px;
+  color: $color-white;
+
   .weather-main-div {
     //children styling
     display: flex;
     flex-direction: row;
+    gap: $spc-20;
 
     .weather-details {
     }
@@ -23,6 +30,7 @@
   .weather-five-day-div {
     display: flex;
     flex-direction: row;
+    gap: $spc-20;
     .weather-day {
     }
   }
