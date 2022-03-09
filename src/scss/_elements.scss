@@ -1,0 +1,12 @@
+input[type='text'] {
+  background-color: rgba($color-black, $alpha-75);
+  border: none;
+  color: $color-white;
+}
+
+input[type='button'] {
+  background-color: rgba($color-blue, 1);
+  border: none;
+  color: $color-white;
+  font-weight: 600;
+}

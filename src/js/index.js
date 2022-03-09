@@ -15,22 +15,41 @@ const displayTemperature = document.querySelector(
 )
 const displayCondition = document.querySelector('.weather-details-condition')
 
+// input elements
+const searchInput = document.querySelector('#input-search')
+const submitInput = document.querySelector('#input-submit')
+
 // addEventListener to button to search a locale
-
-const newCoordString = buildCoordString()
-const coordinateData = queryApi(newCoordString)
-
-coordinateData.then((result) => {
-  console.log(result)
-})
+submitInput.addEventListener('click', submitSearch)
 
 // functions
+
+function submitSearch(e) {
+  updateCityString()
+  const searchString = buildSearchString()
+  const returnObj = queryApi(searchString)
+  returnObj.then((result) => {
+    updateMainDisplay(result)
+  })
+}
+
+function updateMainDisplay(dataObj) {
+  console.log(dataObj)
+  displayCondition.innerHTML = `${dataObj.weather[0].main}`
+  displayCity.innerHTML = `${dataObj.name}, ${dataObj.sys.country}`
+  displayTemperature.innerHTML = `${dataObj.main.temp}\u00B0C`
+}
+
+function updateCityString() {
+  resetCityString()
+  cityCoordString += searchInput.value
+}
 
 function resetCityString() {
   cityCoordString = 'q='
 }
 
-function buildCoordString() {
+function buildSearchString() {
   const newString =
     requestWeatherStringStart + cityCoordString + unitString + apiString
   return newString

@@ -12,7 +12,7 @@
 
   //coloring & border
   background-color: rgba($color-black, $alpha-75);
-  padding: $spc-100;
+  padding: $spc-50;
   border-radius: 12px 12px 12px 12px;
   color: $color-white;
 
@@ -46,5 +46,9 @@
     gap: $spc-20;
     .weather-day {
     }
+  }
+  .weather-location-search-div {
+    align-self: center;
+    margin-top: $spc-100;
   }
 }

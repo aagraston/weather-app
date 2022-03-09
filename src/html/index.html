@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <body>
     <div class="weather-app-container">
-      <div class="weather-location-search-div"></div>
-
+      <div class="weather-app-header-div">
+        <h2>Weather App</h2>
+      </div>
       <div class="weather-main-div">
         <div class="weather-details">
           <div class="weather-details-city">Kelowna</div>
@@ -22,6 +23,11 @@
         <div class="weather-day">PLACE</div>
         <div class="weather-day">PLACE</div>
         <div class="weather-day">PLACE</div>
+      </div>
+
+      <div class="weather-location-search-div">
+        <input type="text" id="input-search" placeholder="search a city" />
+        <input type="button" id="input-submit" value="search" />
       </div>
     </div>
   </body>
