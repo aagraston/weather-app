@@ -2,6 +2,7 @@
   //children styling
   display: flex;
   flex-direction: column;
+  gap: $spc-20;
 
   //position styling
   position: absolute;
@@ -19,12 +20,24 @@
     //children styling
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     gap: $spc-20;
 
     .weather-details {
+      flex-basis: 20%;
+
+      .weather-details-city {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+      .weather-details-temperature {
+        font-size: $font-size-large;
+        font-weight: 600;
+      }
     }
 
     .weather-icon {
+      flex-basis: 80%;
     }
   }
   .weather-five-day-div {
