@@ -1,0 +1,29 @@
+.weather-app-container {
+  //children styling
+  display: flex;
+  flex-direction: column;
+
+  //position styling
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translateY(-75%) translateX(-50%);
+
+  .weather-main-div {
+    //children styling
+    display: flex;
+    flex-direction: row;
+
+    .weather-details {
+    }
+
+    .weather-icon {
+    }
+  }
+  .weather-five-day-div {
+    display: flex;
+    flex-direction: row;
+    .weather-day {
+    }
+  }
+}

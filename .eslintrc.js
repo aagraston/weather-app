@@ -13,6 +13,6 @@ module.exports = {
   rules: {
     'prettier/prettier': 0,
     'no-unused-vars': 'off',
-    'no-ude-before-define': 'off',
+    'no-use-before-define': 'off',
   },
 }
