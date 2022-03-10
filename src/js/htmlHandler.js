@@ -11,6 +11,7 @@ const HtmlProducer = () => {
 
   // input elements
   const searchInput = document.querySelector('#input-search')
+  searchInput.focus()
 
   const getSearchText = () => searchInput.value
 
@@ -26,6 +27,7 @@ const HtmlProducer = () => {
     fiveDayDivArray.forEach((element) => {
       display5DayDiv.appendChild(element)
     })
+    searchInput.focus()
   }
 
   function get5DayDivArray(dataObj) {
