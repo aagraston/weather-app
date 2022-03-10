@@ -11,7 +11,11 @@ const HtmlProducer = () => {
 
   const getSearchText = () => searchInput.value
 
-  function produceMain() {}
+  const produceMain = (dataObj) => {
+    displayCondition.innerHTML = `${dataObj.weather[0].main}`
+    displayCity.innerHTML = `${dataObj.name}, ${dataObj.sys.country}`
+    displayTemperature.innerHTML = `${dataObj.main.temp}\u00B0C`
+  }
 
   function produce5Day() {}
 
