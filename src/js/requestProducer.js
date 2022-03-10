@@ -6,7 +6,7 @@ const RequestProducer = () => {
   // variable constant for five day forecast
   const requestForecastStringStart =
     'http://api.openweathermap.org/data/2.5/forecast?'
-  const requestNumDaysString = '&cnt=5'
+  const requestNumDaysString = '&cnt=40'
 
   // variables shared
   let cityCoordString = 'q='
@@ -41,8 +41,8 @@ const RequestProducer = () => {
       requestForecastStringStart +
       cityCoordString +
       unitString +
-      requestNumDaysString +
-      apiString
+      apiString +
+      requestNumDaysString
     )
   }
 

@@ -4,6 +4,9 @@
   flex-direction: column;
   gap: $spc-20;
 
+  min-width: 650px;
+  min-height: 200px;
+
   //position styling
   position: absolute;
   left: 50%;
@@ -44,7 +47,15 @@
     display: flex;
     flex-direction: row;
     gap: $spc-20;
+
     .weather-day {
+      .weather-day-title {
+        text-transform: uppercase;
+      }
+      .weather-day-temp {
+        font-size: $font-size-medium;
+        font-weight: 600;
+      }
     }
   }
   .weather-location-search-div {

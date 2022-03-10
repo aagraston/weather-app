@@ -28,6 +28,6 @@ function submitSearch(e) {
   // get the forecast display information
   const forecastObj = requestProducer.getQueryForecast()
   forecastObj.then((result) => {
-    console.log(result)
+    htmlHandler.produce5Day(result)
   })
 }
