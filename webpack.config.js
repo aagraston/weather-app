@@ -14,7 +14,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'boiler-plate-3.0',
       template: './src/html/index.html',
-      filename: './html/index.html',
+      filename: './index.html',
       inject: true,
     }),
   ],
