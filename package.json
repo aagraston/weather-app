@@ -4,7 +4,7 @@
   "description": "the third boiler-plate from ya boy",
   "main": "./src/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "watch": "webpack --watch"
   },
   "repository": {
@@ -28,6 +28,7 @@
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-prettier": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.5.1",
     "prettier": "^2.5.1",
     "sass": "^1.49.9",
     "sass-loader": "^12.6.0",
